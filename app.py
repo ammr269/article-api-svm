@@ -42,6 +42,7 @@ def classify_article():
     except Exception as e:
         return jsonify({'error': f'Erreur lors de la prédiction : {str(e)}'}), 500
 
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+# if __name__ == "__main__":
+#     app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
 
